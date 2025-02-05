@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>back</title>
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+</head>
+<body >
+<form >
+    <h1><b>Add a Travel Offer</b></h1>
+    <label >Title:</label>
+    <br>
+    <input type="text" minlength="3" placeholder="minimum 3 caractere" required style="width: 35ch;" required >    
+    <br>
+    <label for="destination">Destination :</label>
+    <br>
+    
+    <input type="text" id="destination" name="destination" minlength="3" pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+" placeholder="excluant les numériques et spéciaux" required style="width: 35ch;" required >
+<br>
+    <label for="date">Depature Date:</label>
+<br>
+<input type="date" title="champ obligatoire" required >
+<br>
+    <label for="date">Return Date:</label>
+<br>
+<input type="date" title="champ obligatoire" required>
+<br>
+<label for="price">price</label>
+<br>
+<input type="number" min="0" required>
+<br>
+<label ">Availability:</label>
+<br>
+<input type="checkbox" name="availability" value="yes" required>
+<br>
+<label for="category">Category:</label>
+<br>
+<select name="category" >
+    <option value="av">adventure</option>
+    <option value="sp">sports</option>
+    <option value="ft">family </option>    
+    <option value="ct">couples </option>
+    <option value="ot">others </option>
+</select>
+<br>
+<button type="submit">Add Offer</button>
+</form>
+</body>
+</html>
